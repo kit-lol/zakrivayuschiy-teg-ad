@@ -1,12 +1,27 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --main-font: 'Inter-Variable';
-  --accent-font: 'PressStart2P';
-  --card-title-fw: 700;
-  --card-text-fw: 400;
-  --bg-color: #FFF;
-  --accent-color: #000;
-  --bg-image: url(../svg/pattern-light.svg);
-  --contour-color: var(--accent-color);
-  --filling-color: #FF0000;
+    --variable-font-main: 'Inter-Variable';
+    --variable-font: 'PressStart2P';
+    --system-font: sans-serif;
+    --color-text: rgba(0, 0, 0, 1);
+    --fsize-main: 18px;
+    --fweight-main: 400;
+    --fweight-title: 700;
+    --line-height-text: 1.167;
+    --line-height-text-botton: 0.9;
+    --line-height-dialog: 1.5;
+    --background-color: rgba(255, 255, 255, 1);
+    --background-image-main: repeating-linear-gradient(to bottom, #d3d3d3 0 2px, rgb(211 211 211 / 0) 2px 4px), repeating-linear-gradient(to right, #d3d3d3 0 2px, rgb(211 211 211 / 0) 2px 4px),
+    linear-gradient(to bottom, #e7e7e7, #e7e7e7 0.01%, #1a1a1a 100%);
+    --outline-main: 2px solid rgba(0, 0, 0, 1);
+    --padding-header: 100px;
+    --gap-card: 50px;
+    --padding-text: 25px;
+    --margin-block-end: 27px;
+    --fill-floppy: rgba(0, 0, 0, 1);
+    --accent-color: rgba(0, 0, 0, 1);
+    --accent-color-text: rgba(255, 255, 255, 1);
+    --box-shadow-focus: 2px 2px 0px 0px rgba(0, 0, 0, 1);
+    --heart-contour-color: rgba(0, 0, 0, 1);
+    --heart-body-color: rgba(255, 0, 0, 1);
 }

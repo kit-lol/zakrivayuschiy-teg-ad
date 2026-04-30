@@ -44,26 +44,26 @@ function setButtonText(heart, button) {
   }
 }
 
-// Дополнительный код для кнопок "Сохранить на память" и "ОК"
+// ========== НОВЫЙ КОД ДЛЯ КНОПОК ==========
+// Кнопка "Сохранить на память"
 const saveButton = document.querySelector('.save');
-const okButton = document.querySelector('.dialog-button');
+const dialog = document.getElementById('dialog');
 
-if (saveButton) {
+if (saveButton && dialog) {
   saveButton.onclick = (e) => {
     e.preventDefault();
-    const dialog = document.querySelector('.dialog');
-    if (dialog) {
-      dialog.showModal();
-    }
+    dialog.showModal();
+    return false;
   };
 }
 
-if (okButton) {
+// Кнопка "ОК" в диалоге
+const okButton = document.querySelector('.dialog-button');
+
+if (okButton && dialog) {
   okButton.onclick = (e) => {
     e.preventDefault();
-    const dialog = document.querySelector('.dialog');
-    if (dialog) {
-      dialog.close();
-    }
+    dialog.close();
+    return false;
   };
 }
